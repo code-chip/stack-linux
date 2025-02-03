@@ -9,8 +9,8 @@ Shellscript desktop linux
 
 ## Package List
 ### Develop
--Git
--Sublime-text
+-Git  
+-Sublime-text  
 -Docker
 -Docker composer
 -Insomnia

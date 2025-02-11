@@ -12,8 +12,8 @@ apt install spotify-client flameshot kolourpaint simplescreenrecorder -y &&
 #packages repository monitoring
 apt install remmina -y &&
 
-#packages monitoring
-apt install htop bashtop psensor -y &&
+#packages terminal
+apt install htop bashtop zsh tmux psensor -y &&
 
 #packages site develop
 curl -L "https://updates.insomnia.rest/downloads/ubuntu/latest?&app=com.insomnia.app&source=website" -o insomnia-lastest.deb &&

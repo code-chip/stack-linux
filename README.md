@@ -5,7 +5,7 @@ Shellscript desktop linux
 1- Download the shellscript run command `git clone git@github.com:code-chip/job-stack.git`  
 2- Access the fold with `cd job-stack`  
 3- Addition permission for the file `chmod 777 job-stack.sh`  
-4- Execute the script `./job-stack.sh`
+4- Execute the script `./job-stack.sh`  
 Or run  
 ```
 git clone git@github.com:code-chip/job-stack.git &&
@@ -26,7 +26,9 @@ cd job-stack && chmod 777 job-stack.sh && ./job-stack.sh
 -Flameshot  
 -Kolourpaint  
 -SimpleScreenrecorder  
-### Monitoring
+### Terminal
 -Htop  
 -Bashtop  
+-zsh  
+-Tmux  
 -Psensor  

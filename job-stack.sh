@@ -26,3 +26,9 @@ sudo dpkg -i vscode-lastest.deb &&
 rm vscode-lastest.deb &&
 
 wget https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb && sudo dpkg -i dbeaver-ce_latest_amd64.deb
+
+#packages snap
+sudo rm /etc/apt/preferences.d/nosnap.pref &&
+sudo apt update &&
+sudo apt install snapd &&
+sudo snap install office365webdesktop --beta

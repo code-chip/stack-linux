@@ -15,6 +15,7 @@ cd stack-linux && chmod 777 packages.sh && ./packages.sh
 ## Package List
 ### Develop
 -Git  
+-zsh  
 -Sublime-text  
 -Docker  
 -Docker composer  
@@ -30,5 +31,6 @@ cd stack-linux && chmod 777 packages.sh && ./packages.sh
 -Htop  
 -Bashtop  
 -zsh  
+-Oh My Zsh    
 -Tmux  
 -Psensor  

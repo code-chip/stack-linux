@@ -16,6 +16,7 @@ apt install remmina -y &&
 apt install htop bashtop zsh tmux psensor -y &&
 
 #packages site develop
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" &&
 curl -L "https://updates.insomnia.rest/downloads/ubuntu/latest?&app=com.insomnia.app&source=website" -o insomnia-lastest.deb &&
 sudo dpkg -i insomnia-lastest.deb &&
 sudo apt install -f &&

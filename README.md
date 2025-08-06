@@ -22,6 +22,7 @@ cd stack-linux && chmod 777 packages.sh && ./packages.sh
 -Insomnia  
 -VSCode  
 -DBeaver  
+-Discord  
 ### Multimidia
 -Spotify  
 -Flameshot  

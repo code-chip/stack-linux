@@ -26,6 +26,10 @@ curl -L "https://code.visualstudio.com/docs/?dv=linux64_deb" -o vscode-lastest.d
 sudo dpkg -i vscode-lastest.deb &&
 rm vscode-lastest.deb &&
 
+curl -L "https://discord.com/api/download?platform=linux&format=deb" -o discord-lastest.deb &&
+sudo dpkg -i discord-lastest.deb &&
+rm discord-lastest.deb &&
+
 wget https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb && sudo dpkg -i dbeaver-ce_latest_amd64.deb
 
 #packages snap

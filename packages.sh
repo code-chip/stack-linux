@@ -58,3 +58,29 @@ rm discord-latest.deb && \
 wget -O dbeaver-ce_latest_amd64.deb https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb && \
 sudo dpkg -i dbeaver-ce_latest_amd64.deb && \
 rm dbeaver-ce_latest_amd64.deb && \
+
+#OPTIONAL INSTALLATION
+echo "Do you want to install optional packages? (y/n)"
+
+#generate ssh-key
+echo "Do you want to generate SSH keys? (y/n)"
+read generate_ssh
+if [ "$generate_ssh" == "y" ]; then
+    echo "Choose the type of key to generate (rsa/ed25519):"
+    read key_type
+    echo "What is your email?"
+    read user_email
+    if [ "$key_type" == "rsa" ]; then
+        ssh-keygen -t rsa -b 4096 -C "$user_email"
+    elif [ "$key_type" == "ed25519" ]; then
+        ssh-keygen -t ed25519 -C "$user_email"
+    else
+        echo "Invalid key type. Please choose either 'rsa' or 'ed25519'."
+    fi
+fi
+
+echo "Install grafics utils? (y/n)"
+read install_grafics
+if [ "$install_grafics" == "y" ]; then
+    sudo apt install mesa-utils -y
+fi
